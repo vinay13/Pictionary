@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-fab right bottom> 
+    <button  ion-fab (click)="takepic()"><ion-icon name="ios-camera-outline"></ion-icon></button>
+  </ion-fab>
+ <ion-card>
+  <img [src]="base64Image">
+ </ion-card>
+
+  <button  ion-button block primary (click)="uploadPic()">Upload!!</button>
+
+</ion-content>

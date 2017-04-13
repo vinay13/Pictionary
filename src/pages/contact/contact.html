@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Contact
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+<button ion-button block dark (click)="ChooseFile()">choose a file...</button>
+<!--<ion-card>
+  <img src="PickedFile">
+  <ion-list>
+    <ion-item *ngFor="let list of listDIR">
+      {{ list }}
+    
+    </ion-item>
+  </ion-list>
+</ion-card>-->
+
+ <ion-card>
+  <img [src]="imageFile">
+ </ion-card>
+
+
+ <button  ion-button block primary (click)="uploadPic()">Upload!!</button>
+</ion-content>
